@@ -1,13 +1,21 @@
-/**
- * @param {string[]} ops - List of operations
- * @return {number} - Sum of scores after performing all operations
- */
- var calPoints = function(ops) {
-  var result = null;
+// Whould you like to play Love game?
 
-return result;
-};
+function playGame() {
+  let money = 0;
+  let rightSwap = false;
+  let relationStatus = 'single';
+  const code = true;
 
-var ops = readline().split(" ");
+  while (code) {
+    money++;
 
-console.log(calPoints(ops));
+    if (rightSwap && relationStatus === 'love') {
+      money--;
+      console.log('Still like to take chance.')
+    }
+    if (money < 0) {
+      break;
+    }
+  }
+  return 'Game ov3r';
+}
